@@ -37,9 +37,13 @@ btn1.addEventListener('click', () => {
         footerLinks.forEach(link => {
             link.style.color = 'white';
         });
+        let faculty = document.querySelectorAll('.faculty h1');
+        faculty.forEach(h1 => {
+            h1.style.color = 'black';
+        });
     } else {
         mode = 'light';
-        document.body.style.backgroundColor = 'lightblue';
+        document.body.style.backgroundColor = 'beige';
         document.body.style.color = 'black';
         btn1.style.backgroundColor.border = 'black'; // Change button background color to black in light mode
         btn1.style.color = 'black'; // Change button text color to white in light mode
