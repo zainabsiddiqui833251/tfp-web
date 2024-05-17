@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+    <div id="loading">
+        <!-- Spinner -->
+        <h1 style="text-align: center;margin-top: 30vh;"> <img src="./img/download__5_-removebg-preview.png" alt="">
+
+        </h1>
+
+    </div>
+
+    <div id="maincontent" style="display: none;">
+        <!-- navbar -->
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hidesidebar()><i class="fa-solid fa-xmark" style="color: white;font-size: 2rem;"></i></li>
+
+                <li data-aos="zoom-out"><a href="#about" data-aos="zoom-out">about</a></li>
+                <li data-aos="zoom-out"><a href="#mission" data-aos="zoom-out">mission</a></li>
+                <li data-aos="zoom-out"><a href="#services" data-aos="zoom-out">services</a></li>
+                <li data-aos="zoom-out"><a href="#faculty" data-aos="zoom-out">faculty</a></li>
+                <li data-aos="zoom-out"><a href="#contact" data-aos="zoom-out">contact</a></li>
+
+            </ul>
+            <ul>
+                <li><a href="#home" style="font-family: Brush Script MT, Brush Script Std, cursive;" class="logo">tech
+                        force
+                        pakistan</a></li>
+                <li class="hide" data-aos="zoom-out"><a href="#about" data-aos="zoom-out">about</a></li>
+                <li class="hide" data-aos="zoom-out"><a href="#mission" data-aos="zoom-out">mission</a></li>
+                <li class="hide" data-aos="zoom-out"><a href="#services" data-aos="zoom-out">services</a></li>
+                <li class="hide" data-aos="zoom-out"><a href="#faculty" data-aos="zoom-out">faculty</a></li>
+                <li class="hide" data-aos="zoom-out"><a href="#contact" data-aos="zoom-out">contact</a></li>
+                <li class="menubtn" onclick=showsidebar()><i class="fa-solid fa-bars"
+                        style="color: white;font-size: 2rem;"></i></li>
+
+            </ul>
+        </nav>
+        <!-- navbar -->
+        <div class="header1">
+            <div class="search" data-aos="slide-right">
+                <input type="text" id="searchInput" style="width: 25%;padding: 0.5%;" placeholder="Search...">
+                <button onclick="searchContent()" style="padding: 0.5%;">Search</button>
+            </div>
+            <div class="mode" style="padding: 0.5%;border: solid;border-radius: 12px;background-color: white;"
+                data-aos="slide-left">
+                <button class="toggle"
+                    style="width: 100%;border: none;background-color: white;padding: 2%;font-size: 2vw;text-transform: capitalize;"><i
+                        class="fa-solid fa-lightbulb" style="color: black;"></i></button>
+            </div>
+        </div>
+
+        <!-- slider -->
+        <div class="maindiv" id="home">
+            <h3>welcome to</h3>
+            <h1>tech force pakistan</h1>
+            <h2>where innovation begins...</h2>
+        </div>
+        <!-- slider -->
+
+        <!-- about -->
+        <div class="about" id="about">
+            <div class="about-1" data-aos="slide-right">
+                <div class="one">
+                    <img src="./img/Tech Force-Logo-01.png" alt="">
+                </div>
+                <div class="one">
+                    <img src="./img/download (2).jpeg" alt="">
+                </div>
+                <div class="one">
+                    <img src="./img/download (4).jpeg" alt="">
+                </div>
+            </div>
+            <div class="about-2" data-aos="slide-left">
+                <h1>about us....</h1>
+                <p>Tech Force Pakistan is a dynamic digital marketing agency specializing in providing innovative
+                    solutions to businesses of all sizes. With a team of passionate experts, we strive to help our
+                    clients achieve their goals by delivering exceptional digital marketing services tailored to their
+                    unique needs. Our commitment to excellence, creativity, and customer satisfaction sets us apart in
+                    the industry.</p>
+            </div>
+        </div>
+        <!-- about -->
+
+
+
+        <!-- mission -->
+        <div class="mission" id="mission">
+            <div class="mission-1" data-aos="slide-left">
+                <h1>our mission and values:</h1>
+                <p>At Tech Force Pakistan, our mission is to empower businesses to thrive in the digital landscape. We
+                    are dedicated to delivering cutting-edge digital marketing solutions that drive growth, increase
+                    brand visibility, and maximize ROI for our clients. Through our strategic approach and relentless
+                    pursuit of excellence, we aim to be the catalyst for our clients' success in the digital world.</p>
+                <blockquote>your success ,our mission </blockquote>
+            </div>
+            <div class="mission-2" data-aos="slide-right">
+                <div class="two">
+                    <img src="./img/mission.jpeg" alt="">
+                </div>
+                <div class="two">
+                    <img src="./img/mission2.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- mission -->
+
+        <!-- services -->
+        <center>
+            <div class="services" id="services">
+                <h1>Explore our offered services.</h1>
+
+                <div class="circle" style="background-image: url(./img/webdevelopment.jpeg);" data-aos="flip-left">
+                    <div class="text">
+                        <p><span><b><u>Website Design & Development</u></b></span><br>Craft visually stunning and
+                            user-friendly websites that captivate audiences and
+                            drive conversions</p>
+                    </div>
+                </div>
+                <div class="circle" style="background-image: url(./img/seo.png);" data-aos="flip-left">
+                    <div class="text">
+                        <p><span><b><u>Search Engine Optimization (SEO):</u></b></span><br>Boost online visibility and
+                            organic traffic through strategic SEO techniques tailored to your business.</p>
+                    </div>
+
+                </div>
+
+                <div class="circle" style="background-image: url(./img/smm.jpeg);" data-aos="flip-left">
+                    <div class="text">
+                        <p><span><b><u>Social Media Marketing</u></b></span><br>Engage and connect with your target
+                            audience
+                            on social media platforms to build brand awareness and drive engagement.</p>
+                    </div>
+
+                </div>
+                <div class="circle" style="background-image: url(./img/ppc.jpeg);" data-aos="flip-left">
+                    <div class="text">
+                        <p><span><b><u>Pay-Per-Click (PPC) Advertising</u></b></span><br>Maximize ROI with targeted PPC
+                            campaigns that reach the right audience at the right time.</p>
+                    </div>
+
+                </div>
+                <div class="circle" style="background-image: url(./img/cm.png);" data-aos="flip-left">
+                    <div class="text">
+                        <p><span><b><u>Content Marketing</u></b></span><br>Create compelling content that resonates with
+                            your audience and drives traffic, leads, and sales</p>
+                    </div>
+
+                </div>
+                <div class="circle" style="background-image: url(./img/em.jpeg);" data-aos="flip-left">
+                    <div class="text">
+                        <p><span><b><u>Email Marketing</u></b></span><br> Build and nurture relationships with your
+                            audience through personalized and targeted email campaigns</p>
+                    </div>
+
+                </div>
+                <div class="circle" style="background-image: url(./img/ga.png);" data-aos="flip-left">
+                    <div class="text">
+                        <p><span><b><u>Google Ads</u></b></span><br>Reach potential customers through Google Ads and
+                            maximize your online visibility.</p>
+                    </div>
+
+                </div>
+                <div class="circle" style="background-image: url(./img/lseo.png);" data-aos="flip-left">
+                    <div class="text">
+                        <p><span><b><u>Local SEO</u></b></span><br>Improve your visibility in local search results and
+                            attract more customers in your area</p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- services -->
+
+            <!-- faculty -->
+            <div class="faculty" id="faculty">
+                <h2>our faculty members:</h2>
+                <div class="members">
+                    <div class="video">
+                        <div class="member" data-aos="zoom-out">
+                            <div class="image">
+                                <img src="./img/ceo.jpeg" alt="">
+                            </div>
+                            <div class="name">
+                                <h1>mr.furqan behlim <br>
+                                    ceo of tech force pakistan</h1>
+                            </div>
+                        </div>
+                        <div class="member" data-aos="zoom-out">
+                            <div class="image">
+                                <img src="./img/teacher.jpeg" alt="">
+                            </div>
+                            <div class="name">
+                                <h1>ramsha noshad
+                                    <br>assistant
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="videos2" style="display: none;">
+                        <br>
+                        <div class="member" data-aos="zoom-out">
+                            <div class="image">
+                                <img src="./img/teacher.jpeg" alt="">
+                            </div>
+                            <div class="name">
+                                <h1>mam shafaq anees <br>
+                                    teacher of batch 01</h1>
+                            </div>
+
+                        </div>
+                        <div class="member" data-aos="zoom-out">
+                            <div class="image">
+                                <img src="./img/teacher.jpeg" alt="">
+                            </div>
+                            <div class="name">
+                                <h1>mam ...... <br> teacher of batch 02</h1>
+
+                            </div>
+
+                        </div>
+                        <div class="member" data-aos="zoom-out">
+                            <div class="image">
+                                <img src="./img/teacher.jpeg" alt="">
+                            </div>
+                            <div class="name">
+                                <h1>mam ...... <br>teacher of batch 03</h1>
+                            </div>
+
+                        </div>
+                        <div class="member" data-aos="zoom-out">
+                            <div class="image">
+                                <img src="./img/teacher.jpeg" alt="">
+                            </div>
+                            <div class="name">
+                                <h1>mam hina <br>teacher of batch 04</h1>
+                            </div>
+
+                        </div>
+                        <div class="member" data-aos="zoom-out">
+                            <div class="image">
+                                <img src="./img/teacher.jpeg" alt="">
+                            </div>
+                            <div class="name">
+                                <h1>mam ramsha noshad <br>teacher of batch 05</h1>
+                            </div>
+
+                        </div>
+                        <div class="member" data-aos="zoom-out">
+                            <div class="image">
+                                <img src="./img/teacher.jpeg" alt="">
+                            </div>
+                            <div class="name">
+                                <h1>mam uzma <br> teacher of batch 06</h1>
+                            </div>
+
+                        </div>
+                    </div>
+                    <button onclick="toggleVideos()" id="readMoreBtn">Show More</button>
+
+                </div>
+            </div>
+            <!-- faculty -->
+
+
+            <!-- footer -->
+            <footer>
+                <div class="one">
+                    <div class="reviews">
+                        <h3>give your review:</h3>
+                        <input type="email" placeholder="email"> <br>
+                        <textarea name="review" id="review" class="review"
+                            placeholder="give your review here..."></textarea> <br>
+                        <button class="submit">submit</button>
+                    </div>
+                </div>
+                <div class="one">
+                    <h3>internal links</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-angles-right"></i> <a href="#home"></i>home</a></li>
+                        <li><i class="fa-solid fa-angles-right"></i> <a href="#about"></i>about</a></li>
+                        <li><i class="fa-solid fa-angles-right"></i> <a href="#mission"></i>mission</a></li>
+                        <li><i class="fa-solid fa-angles-right"></i> <a href="#services"></i>services</a></li>
+                        <li><i class="fa-solid fa-angles-right"></i> <a href="#faculty"></i>faculty</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="one">
+                    <h3 id="contact">contact us:</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-angles-right"></i> <a href="#"><i class="fa-solid fa-phone"></i>+92
+                                313
+                                8659252</a></li>
+                        <li><i class="fa-solid fa-angles-right"></i> <a
+                                href="https://www.instagram.com/zainabsiddiqui534?igsh=OGlmZ2kxN3BsZGht"><i
+                                    class="fa-brands fa-instagram"></i>zainabsiddiqui534</a>
+                        </li>
+                        <li><i class="fa-solid fa-angles-right"></i> <a
+                                href="https://x.com/sidd94699?t=cF7ltFACulS6Awdkn_4Tvw&s=09"><i
+                                    class="fa-brands fa-twitter"></i>@sidd94699</a>
+                        </li>
+                        <li><i class="fa-solid fa-angles-right"></i> <a
+                                href="https://www.linkedin.com/in/zainab-siddiqui-822139283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                    class="fa-brands fa-linkedin"></i>zainab siddiqui</a>
+                        </li>
+                        <li><i class="fa-solid fa-angles-right"></i> <a href="#"><i
+                                    class="fa-brands fa-whatsapp"></i>+92
+                                313 8659252</a></li>
+
+
+
+                    </ul>
+                </div>
+
+            </footer>
+            <!-- footer -->
+        </center>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                offset: 300,
+                duration: 300,
+                easing: 'ease-in-out',
+                // delay: 300,
+            }
+        );
+    </script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
