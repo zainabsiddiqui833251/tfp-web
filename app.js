@@ -38,21 +38,32 @@ btn1.addEventListener('click', () => {
             link.style.color = 'white';
         });
         let faculty = document.querySelectorAll('.faculty h1');
+        let footer = document.querySelector('footer')
+let nav = document.querySelector('nav');
         faculty.forEach(h1 => {
-            h1.style.color = 'black';
+            h1.style.color = '#fe8040';
         });
+        footer.style.backgroundColor = '#303030'
+        nav.style.backgroundColor = '#303030'
+
     } else {
         mode = 'light';
-        document.body.style.backgroundColor = 'beige';
-        document.body.style.color = 'black';
+        document.body.style.backgroundColor = '#303030';
+        document.body.style.color = 'white';
         btn1.style.backgroundColor.border = 'black'; // Change button background color to black in light mode
         btn1.style.color = 'black'; // Change button text color to white in light mode
         btn1.innerHTML = '<i class="fa-solid fa-lightbulb" style="color: grey;">dark';
         // Change color of footer links to black in light mode
         let footerLinks = document.querySelectorAll('footer a');
+        let footer = document.querySelector('footer')
+        let nav = document.querySelector('nav');
+        
         footerLinks.forEach(link => {
             link.style.color = 'white';
         });
+        footer.style.backgroundColor = 'black'
+        nav.style.backgroundColor = 'black'
+
     }
 });
 

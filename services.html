@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hidesidebar()><i class="fa-solid fa-xmark" style="color: white;font-size: 2rem;"></i></li>
+
+            <li data-aos="zoom-out"><a href="index.html" data-aos="zoom-out">about</a></li>
+            <li data-aos="zoom-out"><a href="index.html" data-aos="zoom-out">mission</a></li>
+            <li data-aos="zoom-out"><a href="index.html" data-aos="zoom-out">services</a></li>
+            <li data-aos="zoom-out"><a href="index.html" data-aos="zoom-out">faculty</a></li>
+            <li data-aos="zoom-out"><a href="index.html" data-aos="zoom-out">contact</a></li>
+
+        </ul>
+        <ul>
+            <li><a href="index.html" style="font-family: Brush Script MT, Brush Script Std, cursive;" class="logo">tech force
+                    pakistan</a></li>
+            <li class="hide" data-aos="zoom-out"><a href="index.html" data-aos="zoom-out">about</a></li>
+            <li class="hide" data-aos="zoom-out"><a href="index.html" data-aos="zoom-out">mission</a></li>
+            <li class="hide" data-aos="zoom-out"><a href="index.html" data-aos="zoom-out">services</a></li>
+            <li class="hide" data-aos="zoom-out"><a href="index.html" data-aos="zoom-out">faculty</a></li>
+            <li class="hide" data-aos="zoom-out"><a href="index.html" data-aos="zoom-out">contact</a></li>
+            <li class="menubtn" onclick=showsidebar()><i class="fa-solid fa-bars"
+                    style="color: white;font-size: 2rem;"></i></li>
+
+        </ul>
+    </nav>
+    <!-- navbar -->
+    <div class="header1">
+        <div class="search" data-aos="slide-right">
+            <input type="text" id="searchInput" style="width: 25%;padding: 0.5%;" placeholder="Search...">
+            <button onclick="searchContent()" style="padding: 0.5%;">Search</button>
+        </div>
+        <div class="mode" style="padding: 0.5%;border: solid;border-radius: 12px;background-color: white;"
+            data-aos="slide-left">
+            <button class="toggle"
+                style="width: 100%;border: none;background-color: white;padding: 2%;font-size: 2vw;text-transform: capitalize;"><i
+                    class="fa-solid fa-lightbulb" style="color: black;"></i></button>
+        </div>
+    </div>
+
+    <!-- slider -->
+    <div class="maindiv" id="home">
+        <h3>welcome to</h3>
+        <h1>tech force pakistan</h1>
+        <h2>where innovation begins...</h2>
+    </div>
+    <!-- slider -->
+    <center>
+        <!-- services -->
+        <div class="services" id="services">
+            <h1>Explore our offered <span>services</span></h1>
+
+            <div class="circle" style="background-image: url(./img/webdevelopment.jpeg);" data-aos="flip-left">
+                <div class="text">
+                    <p><span><b><u>Website Design & Development</u></b></span><br>Craft visually stunning and
+                        user-friendly websites that captivate audiences and
+                        drive conversions</p>
+                </div>
+            </div>
+            <div class="circle" style="background-image: url(./img/seo.png);" data-aos="flip-left">
+                <div class="text">
+                    <p><span><b><u>Search Engine Optimization (SEO):</u></b></span><br>Boost online visibility and
+                        organic traffic through strategic SEO techniques tailored to your business.</p>
+                </div>
+
+            </div>
+
+            <div class="circle" style="background-image: url(./img/smm.jpeg);" data-aos="flip-left">
+                <div class="text">
+                    <p><span><b><u>Social Media Marketing</u></b></span><br>Engage and connect with your target
+                        audience
+                        on social media platforms to build brand awareness and drive engagement.</p>
+                </div>
+
+            </div>
+            <div class="circle" style="background-image: url(./img/ppc.jpeg);" data-aos="flip-left">
+                <div class="text">
+                    <p><span><b><u>Pay-Per-Click (PPC) Advertising</u></b></span><br>Maximize ROI with targeted PPC
+                        campaigns that reach the right audience at the right time.</p>
+                </div>
+
+            </div>
+            <div class="circle" style="background-image: url(./img/cm.png);" data-aos="flip-left">
+                <div class="text">
+                    <p><span><b><u>Content Marketing</u></b></span><br>Create compelling content that resonates with
+                        your audience and drives traffic, leads, and sales</p>
+                </div>
+
+            </div>
+            <div class="circle" style="background-image: url(./img/em.jpeg);" data-aos="flip-left">
+                <div class="text">
+                    <p><span><b><u>Email Marketing</u></b></span><br> Build and nurture relationships with your
+                        audience through personalized and targeted email campaigns</p>
+                </div>
+
+            </div>
+            <div class="circle" style="background-image: url(./img/ga.png);" data-aos="flip-left">
+                <div class="text">
+                    <p><span><b><u>Google Ads</u></b></span><br>Reach potential customers through Google Ads and
+                        maximize your online visibility.</p>
+                </div>
+
+            </div>
+            <div class="circle" style="background-image: url(./img/lseo.png);" data-aos="flip-left">
+                <div class="text">
+                    <p><span><b><u>Local SEO</u></b></span><br>Improve your visibility in local search results and
+                        attract more customers in your area</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- services -->
+   
+    <!-- footer -->
+    <footer>
+        <div class="one">
+            <div class="reviews">
+                <h3>give your review:</h3>
+                <input type="email" placeholder="email"> <br>
+                <textarea name="review" id="review" class="review" placeholder="give your review here..."></textarea>
+                <br>
+                <button class="submit">submit</button>
+            </div>
+        </div>
+        <div class="one">
+            <h3>internal links</h3>
+            <ul>
+                <li><i class="fa-solid fa-angles-right"></i> <a href="#home"></i>home</a></li>
+                <li><i class="fa-solid fa-angles-right"></i> <a href="#about"></i>about</a></li>
+                <li><i class="fa-solid fa-angles-right"></i> <a href="#mission"></i>mission</a></li>
+                <li><i class="fa-solid fa-angles-right"></i> <a href="#services"></i>services</a></li>
+                <li><i class="fa-solid fa-angles-right"></i> <a href="#faculty"></i>faculty</a></li>
+
+
+            </ul>
+        </div>
+        <div class="one">
+            <h3 id="contact">contact us:</h3>
+            <ul>
+                <li><i class="fa-solid fa-angles-right"></i> <a href="#"><i class="fa-solid fa-phone"></i>+92
+                        313
+                        8659252</a></li>
+                <li><i class="fa-solid fa-angles-right"></i> <a
+                        href="https://www.instagram.com/zainabsiddiqui534?igsh=OGlmZ2kxN3BsZGht"><i
+                            class="fa-brands fa-instagram"></i>zainabsiddiqui534</a>
+                </li>
+                <li><i class="fa-solid fa-angles-right"></i> <a
+                        href="https://x.com/sidd94699?t=cF7ltFACulS6Awdkn_4Tvw&s=09"><i
+                            class="fa-brands fa-twitter"></i>@sidd94699</a>
+                </li>
+                <li><i class="fa-solid fa-angles-right"></i> <a
+                        href="https://www.linkedin.com/in/zainab-siddiqui-822139283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                            class="fa-brands fa-linkedin"></i>zainab siddiqui</a>
+                </li>
+                <li><i class="fa-solid fa-angles-right"></i> <a href="#"><i class="fa-brands fa-whatsapp"></i>+92
+                        313 8659252</a></li>
+
+
+
+            </ul>
+        </div>
+
+    </footer>
+</center>
+
+<script src="app.js"></script>
+</body>
+
+</html>
